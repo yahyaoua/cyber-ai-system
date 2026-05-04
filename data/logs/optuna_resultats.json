@@ -1,0 +1,10 @@
+{
+  "meilleure_precision": 1.0,
+  "meilleurs_params": {
+    "epsilon": 0.24322744504389313,
+    "max_depth": 24,
+    "n_neighbors": 9,
+    "delta": 0.0016945676575753712
+  },
+  "nombre_trials": 30
+}
