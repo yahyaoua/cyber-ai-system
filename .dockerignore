@@ -1,0 +1,11 @@
+# .dockerignore
+myenv/
+__pycache__/
+*.pyc
+*.pyo
+.git/
+.pytest_cache/
+dashboard/frontend/node_modules/
+dashboard/frontend/dist/
+*.ipynb_checkpoints/
+data/logs/

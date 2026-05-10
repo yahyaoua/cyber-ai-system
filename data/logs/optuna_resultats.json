@@ -1,10 +1,342 @@
 {
   "meilleure_precision": 1.0,
   "meilleurs_params": {
-    "epsilon": 0.24322744504389313,
-    "max_depth": 24,
-    "n_neighbors": 9,
-    "delta": 0.0016945676575753712
+    "epsilon": 0.2262451729746285,
+    "max_depth": 10,
+    "n_neighbors": 8,
+    "delta": 0.007714173999425095
   },
-  "nombre_trials": 30
+  "nombre_trials": 30,
+  "tous_les_trials": [
+    {
+      "trial": 0,
+      "precision": 0.9997,
+      "params": {
+        "epsilon": 0.22322402801048077,
+        "max_depth": 30,
+        "n_neighbors": 14,
+        "delta": 0.00461908447227822
+      },
+      "state": "TrialState.COMPLETE"
+    },
+    {
+      "trial": 1,
+      "precision": 1.0,
+      "params": {
+        "epsilon": 0.2262451729746285,
+        "max_depth": 10,
+        "n_neighbors": 8,
+        "delta": 0.007714173999425095
+      },
+      "state": "TrialState.COMPLETE"
+    },
+    {
+      "trial": 2,
+      "precision": 1.0,
+      "params": {
+        "epsilon": 0.21850384035877732,
+        "max_depth": 23,
+        "n_neighbors": 10,
+        "delta": 0.00861280850179613
+      },
+      "state": "TrialState.COMPLETE"
+    },
+    {
+      "trial": 3,
+      "precision": 1.0,
+      "params": {
+        "epsilon": 0.27691264116757885,
+        "max_depth": 8,
+        "n_neighbors": 4,
+        "delta": 0.0010483666890634272
+      },
+      "state": "TrialState.COMPLETE"
+    },
+    {
+      "trial": 4,
+      "precision": 1.0,
+      "params": {
+        "epsilon": 0.17812334813437783,
+        "max_depth": 16,
+        "n_neighbors": 6,
+        "delta": 0.0010979117176001835
+      },
+      "state": "TrialState.COMPLETE"
+    },
+    {
+      "trial": 5,
+      "precision": 1.0,
+      "params": {
+        "epsilon": 0.09242847489581661,
+        "max_depth": 20,
+        "n_neighbors": 14,
+        "delta": 0.004753274819153125
+      },
+      "state": "TrialState.COMPLETE"
+    },
+    {
+      "trial": 6,
+      "precision": 1.0,
+      "params": {
+        "epsilon": 0.04284789565154198,
+        "max_depth": 24,
+        "n_neighbors": 9,
+        "delta": 0.003382593007766691
+      },
+      "state": "TrialState.COMPLETE"
+    },
+    {
+      "trial": 7,
+      "precision": 1.0,
+      "params": {
+        "epsilon": 0.05677607144167642,
+        "max_depth": 14,
+        "n_neighbors": 15,
+        "delta": 0.001623220693077663
+      },
+      "state": "TrialState.COMPLETE"
+    },
+    {
+      "trial": 8,
+      "precision": 1.0,
+      "params": {
+        "epsilon": 0.18888035893474614,
+        "max_depth": 22,
+        "n_neighbors": 12,
+        "delta": 0.002171365641995147
+      },
+      "state": "TrialState.COMPLETE"
+    },
+    {
+      "trial": 9,
+      "precision": 1.0,
+      "params": {
+        "epsilon": 0.07521399618764937,
+        "max_depth": 10,
+        "n_neighbors": 4,
+        "delta": 0.0031204965753167373
+      },
+      "state": "TrialState.COMPLETE"
+    },
+    {
+      "trial": 10,
+      "precision": 1.0,
+      "params": {
+        "epsilon": 0.12415035435112673,
+        "max_depth": 5,
+        "n_neighbors": 7,
+        "delta": 0.009345612093152943
+      },
+      "state": "TrialState.COMPLETE"
+    },
+    {
+      "trial": 11,
+      "precision": 0.9997,
+      "params": {
+        "epsilon": 0.251029306532365,
+        "max_depth": 26,
+        "n_neighbors": 10,
+        "delta": 0.009660097050720256
+      },
+      "state": "TrialState.COMPLETE"
+    },
+    {
+      "trial": 12,
+      "precision": 0.9997,
+      "params": {
+        "epsilon": 0.20701930205803482,
+        "max_depth": 13,
+        "n_neighbors": 11,
+        "delta": 0.006662089151299349
+      },
+      "state": "TrialState.COMPLETE"
+    },
+    {
+      "trial": 13,
+      "precision": 1.0,
+      "params": {
+        "epsilon": 0.2931682491847897,
+        "max_depth": 19,
+        "n_neighbors": 7,
+        "delta": 0.006676569852196083
+      },
+      "state": "TrialState.COMPLETE"
+    },
+    {
+      "trial": 14,
+      "precision": 1.0,
+      "params": {
+        "epsilon": 0.14336401246525102,
+        "max_depth": 27,
+        "n_neighbors": 8,
+        "delta": 0.00658218360372578
+      },
+      "state": "TrialState.COMPLETE"
+    },
+    {
+      "trial": 15,
+      "precision": 1.0,
+      "params": {
+        "epsilon": 0.2421360793299741,
+        "max_depth": 12,
+        "n_neighbors": 12,
+        "delta": 0.005036850096559815
+      },
+      "state": "TrialState.COMPLETE"
+    },
+    {
+      "trial": 16,
+      "precision": 1.0,
+      "params": {
+        "epsilon": 0.16469278522302852,
+        "max_depth": 17,
+        "n_neighbors": 9,
+        "delta": 0.008036151713251638
+      },
+      "state": "TrialState.COMPLETE"
+    },
+    {
+      "trial": 17,
+      "precision": 1.0,
+      "params": {
+        "epsilon": 0.2547303222460715,
+        "max_depth": 6,
+        "n_neighbors": 6,
+        "delta": 0.003436065874630182
+      },
+      "state": "TrialState.COMPLETE"
+    },
+    {
+      "trial": 18,
+      "precision": 1.0,
+      "params": {
+        "epsilon": 0.21317211895555802,
+        "max_depth": 21,
+        "n_neighbors": 11,
+        "delta": 0.007765937762904479
+      },
+      "state": "TrialState.COMPLETE"
+    },
+    {
+      "trial": 19,
+      "precision": 1.0,
+      "params": {
+        "epsilon": 0.01502089278624863,
+        "max_depth": 9,
+        "n_neighbors": 3,
+        "delta": 0.005695324473938571
+      },
+      "state": "TrialState.COMPLETE"
+    },
+    {
+      "trial": 20,
+      "precision": 1.0,
+      "params": {
+        "epsilon": 0.13347419565780816,
+        "max_depth": 24,
+        "n_neighbors": 8,
+        "delta": 0.0024393147189789516
+      },
+      "state": "TrialState.COMPLETE"
+    },
+    {
+      "trial": 21,
+      "precision": 1.0,
+      "params": {
+        "epsilon": 0.2819179721614128,
+        "max_depth": 7,
+        "n_neighbors": 5,
+        "delta": 0.0011615838258310488
+      },
+      "state": "TrialState.COMPLETE"
+    },
+    {
+      "trial": 22,
+      "precision": 1.0,
+      "params": {
+        "epsilon": 0.2648859154004817,
+        "max_depth": 9,
+        "n_neighbors": 5,
+        "delta": 0.001413947920012313
+      },
+      "state": "TrialState.COMPLETE"
+    },
+    {
+      "trial": 23,
+      "precision": 1.0,
+      "params": {
+        "epsilon": 0.23312835507919508,
+        "max_depth": 11,
+        "n_neighbors": 3,
+        "delta": 0.001910946790199883
+      },
+      "state": "TrialState.COMPLETE"
+    },
+    {
+      "trial": 24,
+      "precision": 1.0,
+      "params": {
+        "epsilon": 0.2719069660889282,
+        "max_depth": 15,
+        "n_neighbors": 10,
+        "delta": 0.002869736846331031
+      },
+      "state": "TrialState.COMPLETE"
+    },
+    {
+      "trial": 25,
+      "precision": 1.0,
+      "params": {
+        "epsilon": 0.2947205761555982,
+        "max_depth": 9,
+        "n_neighbors": 8,
+        "delta": 0.00407071708041807
+      },
+      "state": "TrialState.COMPLETE"
+    },
+    {
+      "trial": 26,
+      "precision": 0.9993,
+      "params": {
+        "epsilon": 0.1941925411788244,
+        "max_depth": 7,
+        "n_neighbors": 12,
+        "delta": 0.00805425303522686
+      },
+      "state": "TrialState.COMPLETE"
+    },
+    {
+      "trial": 27,
+      "precision": 1.0,
+      "params": {
+        "epsilon": 0.22972951180397366,
+        "max_depth": 18,
+        "n_neighbors": 4,
+        "delta": 0.0013651574680793627
+      },
+      "state": "TrialState.COMPLETE"
+    },
+    {
+      "trial": 28,
+      "precision": 1.0,
+      "params": {
+        "epsilon": 0.16885905400409243,
+        "max_depth": 23,
+        "n_neighbors": 10,
+        "delta": 0.005832227493958757
+      },
+      "state": "TrialState.COMPLETE"
+    },
+    {
+      "trial": 29,
+      "precision": 1.0,
+      "params": {
+        "epsilon": 0.2200636156855204,
+        "max_depth": 30,
+        "n_neighbors": 13,
+        "delta": 0.003948318574580314
+      },
+      "state": "TrialState.COMPLETE"
+    }
+  ]
 }

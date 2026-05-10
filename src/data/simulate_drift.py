@@ -1,8 +1,4 @@
-# src/data/simulate_drift.py
-# ============================================================
-# Rôle : Charger le dataset UNSW-NB15 comme un stream
-# et simuler une dérive artificielle pour tester le système
-# ============================================================
+
 
 import os
 import pandas as pd
@@ -10,9 +6,7 @@ import numpy as np
 from river.stream import iter_pandas
 
 
-# ============================================================
-# FONCTION : Charger le dataset proprement
-# ============================================================
+
 def charger_dataset(chemin=None):
     """
     Charge le CSV UNSW-NB15 et retourne :
@@ -119,7 +113,50 @@ def charger_stream_avec_derive(chemin=None, n=20000, point_derive=0.5):
     print(f"       - {n - mi} étapes avec dérive (à partir de l'étape {mi})")
 
     return iter_pandas(X=df_final[features], y=df_final[target])
+# src/data/simulate_drift.py
+# Ajouter cette fonction
 
+def charger_stream_complet(chemin_train=None, chemin_test=None):
+    """
+    Charge train + test concaténés pour simuler un vrai flux.
+    Train d'abord → puis test → dérive naturelle entre les deux
+    car les distributions sont légèrement différentes.
+    """
+    if chemin_train is None:
+        chemin_train = os.path.join(
+            os.path.dirname(__file__),
+            "../../data/unsw-nb15/UNSW_NB15_training-set.csv"
+        )
+    if chemin_test is None:
+        chemin_test = os.path.join(
+            os.path.dirname(__file__),
+            "../../data/unsw-nb15/UNSW_NB15_testing-set.csv"
+        )
+
+    print("[Data] Chargement train + test...")
+    df_train = pd.read_csv(chemin_train)
+    df_test  = pd.read_csv(chemin_test)
+
+    target = "label"
+    cols_supprimer = [c for c in ["id", "attack_cat"] if c in df_train.columns]
+    features = [c for c in df_train.columns if c not in [target] + cols_supprimer]
+
+    # Nettoyer les deux
+    for df in [df_train, df_test]:
+        for col in df[features].select_dtypes(include="object").columns:
+            df[col] = pd.Categorical(df[col]).codes
+
+    # Concaténer : train puis test
+    df_final = pd.concat(
+        [df_train[features + [target]], df_test[features + [target]]],
+        ignore_index=True
+    )
+
+    print(f"[Data] Train : {len(df_train):,} lignes")
+    print(f"[Data] Test  : {len(df_test):,} lignes")
+    print(f"[Data] Total : {len(df_final):,} lignes")
+
+    return iter_pandas(X=df_final[features], y=df_final[target]), features, target
 
 # ============================================================
 # FONCTION : Afficher les infos du dataset (pour le notebook)

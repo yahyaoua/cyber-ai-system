@@ -99,10 +99,20 @@ def optimiser(n_trials=30, chemin_resultats=None):
     print(f"\n   Meilleure précision : {study.best_value:.4f}")
 
     os.makedirs(os.path.dirname(chemin_resultats), exist_ok=True)
+    tous_les_trials = [
+        {
+            "trial": t.number,
+            "precision": round(t.value, 4) if t.value is not None else None,
+            "params": t.params,
+            "state": str(t.state)
+        }
+        for t in study.trials
+    ]
     resultats = {
         "meilleure_precision" : round(study.best_value, 4),
         "meilleurs_params"    : study.best_params,
-        "nombre_trials"       : n_trials
+        "nombre_trials"       : n_trials,
+        "tous_les_trials"     : tous_les_trials
     }
     with open(chemin_resultats, "w", encoding="utf-8") as f:
         json.dump(resultats, f, indent=2, ensure_ascii=False)
